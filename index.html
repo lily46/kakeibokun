@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>家計簿くん</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+
+<body>
+  <div id="container" class="container-fluid">
+
+    <!-- Input row -->
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+        <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">合計</h6>
+                <small class="text-muted"></small>
+              </div>
+              <span class="text-muted" id="total"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">1日平均</h6>
+                <small class="text-muted"></small>
+              </div>
+              <span class="text-muted" id="average"></span>
+            </li>
+          </ul>
+      </div>
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 ">
+        <button class="button" id="make">make</button>
+          
+        <table>
+          <table class="table">
+            <thead>
+              <tr><th>日付</th><th>値段</th><th>タグ</th></tr>
+            </thead>
+            <tbody id="kakeibo">
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="./window.js" charset="utf-8"></script>
+</html>
